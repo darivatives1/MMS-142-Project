@@ -1,5 +1,4 @@
-
-/* ===== HEADER NAVIGATION ===== */
+/* ===== HEADER NAVIGATION ===== */
 
 .header-nav {
     display: flex;
@@ -50,8 +49,7 @@
 
 .footer-brand-section p {
     margin-top: 10px;
-    font-size: 18
-px;
+    font-size: 18px;
 }
 
 .footer-nav {
@@ -169,8 +167,7 @@ px;
 .header-nav a:hover {
     color: #e9b51c !important;
 }
-
-
+
 /* ===== RESPONSIVE HEADER ===== */
 
 @media (max-width: 768px) {
@@ -243,8 +240,7 @@ px;
     margin-bottom: 15px;
     letter-spacing: 0.5px;
 }
-
-
+
 /* Social Media Icons */
 .social-media {
     display: flex;
