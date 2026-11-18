@@ -22,23 +22,242 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-
-<body>
-
-    <!-- HEADER -->
-    <div id="site-header"></div>
+    
+<body class="d-flex flex-column min-vh-100">
+<!-- HEADER -->
+    <header id="site-header" class="py-3" style="background-color: #0c1320;">
+        <div class="container">
+            <a href="#" class="d-inline-flex align-items-center gap-3 text-decoration-none text-white">
+               <!-- Brand Logo -->
+                <img src="logo.png" alt="PASADA Logo" class="rounded-circle bg-white flex-shrink-0 p-1" style="width: 48px; height: 48px; object-fit: contain;">
+                <!-- Brand Title -->
+                <span class="fw-bold fs-1 lh-1" style="letter-spacing: 0.04em;">PASADA</span>
+            </a>
+        </div>
+    </header>
 
 
     <!-- MAIN CONTENT -->
-    <main>
+    <main class="container my-5 flex-grow-1">
+        <div class="row g-4">
 
-        # PUT YOUR HOME PAGE CONTENT HERE
+            <!-- LEFT COLUMN: Product Info, Details & Reviews -->
+            <div class="col-lg-9">
 
+                <!-- Product Overview Row -->
+                <div class="row g-4 align-items-start mb-4">
+
+                    <!-- Product Image -->
+                    <div class="col-md-5">
+                        <div class="ratio ratio-1x1 bg-secondary bg-opacity-75">
+                            <svg viewBox="0 0 200 200" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="200" height="200" fill="#999999"/>
+                                <circle cx="140" cy="60" r="18" fill="#cccccc"/>
+                                <polygon points="35,165 95,75 155,165" fill="#cccccc"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Product Controls -->
+                    <div class="col-md-7">
+                        <h1 class="fw-bold mb-1">Everyday Comfort</h1>
+                        <p class="fs-4 font-monospace mb-3">P499.00</p>
+
+                        <!-- Size Selector -->
+                        <div class="d-flex gap-2 mb-3" role="group" aria-label="Size selection">
+                            <input type="radio" class="btn-check" name="size" id="size-s" autocomplete="off">
+                            <label class="btn rounded-0 px-4 font-monospace" style="background-color: #cccccc;" for="size-s">S</label>
+
+                            <input type="radio" class="btn-check" name="size" id="size-m" autocomplete="off">
+                            <label class="btn rounded-0 px-4 font-monospace" style="background-color: #cccccc;" for="size-m">M</label>
+
+                            <input type="radio" class="btn-check" name="size" id="size-l" autocomplete="off">
+                            <label class="btn rounded-0 px-4 font-monospace" style="background-color: #cccccc;" for="size-l">L</label>
+                        </div>
+
+                        <!-- Quantity Selector -->
+                        <div class="d-inline-flex align-items-center mb-3 font-monospace" style="background-color: #cccccc;">
+                            <button type="button" class="btn btn-sm border-0 rounded-0 px-3 py-1">-</button>
+                            <span class="px-2">0</span>
+                            <button type="button" class="btn btn-sm border-0 rounded-0 px-3 py-1">+</button>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                            <button type="button" class="btn rounded-0 border border-dark text-white font-monospace px-3 py-1" style="background-color: #546378;">
+                                Add to Cart
+                            </button>
+                            <button type="button" class="btn rounded-0 border border-dark text-dark font-monospace px-3 py-1" style="background-color: #dfb228;">
+                                Order Now
+                            </button>
+                        </div>
+
+                        <!-- Sold Count -->
+                        <p class="small mb-0">6767 sold</p>
+                    </div>
+                </div>
+
+                <!-- Product Details Section -->
+                <section class="mb-4">
+                    <h4 class="fw-bold mb-2">Details</h4>
+                    <p class="font-monospace mb-1">Made with 100% cotton</p>
+                    <p class="font-monospace mb-0">Breathable, soft, and versatile</p>
+                </section>
+
+                <!-- Customer Reviews Section -->
+                <section>
+                    <h4 class="fw-bold mb-2">Customer Reviews</h4>
+
+                    <!-- Overall Rating -->
+                    <div class="d-flex align-items-center gap-3 mb-4">
+                        <span class="fs-1 fw-bold lh-1">4.0</span>
+                        <div class="fs-3 d-flex gap-2">
+                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                            <i class="bi bi-star-fill" style="color: #d9d9d9;"></i>
+                        </div>
+                    </div>
+
+                    <!-- Individual Reviews -->
+                    <div class="row g-4">
+
+                        <!-- Review Card 1 -->
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start justify-content-between gap-2">
+                                <div class="d-flex align-items-start gap-3">
+                                    <!-- Avatar -->
+                                    <div class="rounded-circle flex-shrink-0" style="width: 56px; height: 56px; background-color: #d9d9d9;"></div>
+                                    <!-- Review Content -->
+                                    <div>
+                                        <div class="small d-flex gap-1 mb-1">
+                                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                                            <i class="bi bi-star-fill" style="color: #d9d9d9;"></i>
+                                        </div>
+                                        <p class="small font-monospace mb-2">Lucy | 10/13/26</p>
+                                        <p class="small font-monospace mb-0">Wearable and nice</p>
+                                    </div>
+                                </div>
+                                <!-- Review Photo Placeholder -->
+                                <div class="flex-shrink-0" style="width: 110px; height: 75px;">
+                                    <svg viewBox="0 0 110 75" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="110" height="75" fill="#999999"/>
+                                        <line x1="0" y1="0" x2="110" y2="75" stroke="#cccccc" stroke-width="1"/>
+                                        <line x1="110" y1="0" x2="0" y2="75" stroke="#cccccc" stroke-width="1"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review Card 2 -->
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start justify-content-between gap-2">
+                                <div class="d-flex align-items-start gap-3">
+                                    <!-- Avatar -->
+                                    <div class="rounded-circle flex-shrink-0" style="width: 56px; height: 56px; background-color: #d9d9d9;"></div>
+                                    <!-- Review Content -->
+                                    <div>
+                                        <div class="small d-flex gap-1 mb-1">
+                                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                                            <i class="bi bi-star-fill" style="color: #d9d9d9;"></i>
+                                        </div>
+                                        <p class="small font-monospace mb-2">Lucy | 10/13/26</p>
+                                        <p class="small font-monospace mb-0">Wearable and nice</p>
+                                    </div>
+                                </div>
+                                <!-- Review Photo Placeholder -->
+                                <div class="flex-shrink-0" style="width: 110px; height: 75px;">
+                                    <svg viewBox="0 0 110 75" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="110" height="75" fill="#999999"/>
+                                        <line x1="0" y1="0" x2="110" y2="75" stroke="#cccccc" stroke-width="1"/>
+                                        <line x1="110" y1="0" x2="0" y2="75" stroke="#cccccc" stroke-width="1"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- RIGHT COLUMN: Other Product Recommendations -->
+            <div class="col-lg-3">
+                <aside class="p-4 h-100 text-center" style="background-color: #d9d9d9;">
+                    <h6 class="fw-bold font-monospace mb-4">Check Out our other products here!</h6>
+
+                    <!-- Recommended Product 1 -->
+                    <a href="#" class="text-decoration-none text-dark d-block mb-4">
+                        <div class="mx-auto mb-2" style="width: 135px; height: 135px;">
+                            <svg viewBox="0 0 200 200" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="200" height="200" fill="#999999"/>
+                                <circle cx="140" cy="60" r="18" fill="#cccccc"/>
+                                <polygon points="35,165 95,75 155,165" fill="#cccccc"/>
+                            </svg>
+                        </div>
+                        <p class="fw-bold small mb-0">Do Good Work</p>
+                        <p class="small mb-1">P 499.00</p>
+                        <div class="small d-flex justify-content-center gap-1 mb-1">
+                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                        </div>
+                        <p class="mb-0" style="font-size: 0.75rem;">6767 sold</p>
+                    </a>
+
+                    <!-- Recommended Product 2 -->
+                    <a href="#" class="text-decoration-none text-dark d-block">
+                        <div class="mx-auto mb-2" style="width: 135px; height: 135px;">
+                            <svg viewBox="0 0 200 200" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="200" height="200" fill="#999999"/>
+                                <circle cx="140" cy="60" r="18" fill="#cccccc"/>
+                                <polygon points="35,165 95,75 155,165" fill="#cccccc"/>
+                            </svg>
+                        </div>
+                        <p class="fw-bold small mb-0">Don't Be Late</p>
+                        <p class="small mb-1">P 499.00</p>
+                        <div class="small d-flex justify-content-center gap-1 mb-1">
+                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                            <i class="bi bi-star-fill" style="color: #dfb228;"></i>
+                            <i class="bi bi-star-fill" style="color: #6b7a8f;"></i>
+                        </div>
+                        <p class="mb-0" style="font-size: 0.75rem;">6767 sold</p>
+                    </a>
+
+                </aside>
+            </div>
+
+        </div>
     </main>
-
-
-    <!-- FOOTER -->
-    <div id="site-footer"></div>
+       <!-- FOOTER -->
+    <footer id="site-footer" class="py-3 mt-auto" style="background-color: #0c1320;">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+                <!-- Footer Navigation Links -->
+                <nav class="d-flex flex-wrap justify-content-center gap-4 gap-md-5 font-monospace small ms-md-5 ps-md-4">
+                    <a href="index.html" class="text-white text-decoration-none">Home</a>
+                    <a href="about.html" class="text-white text-decoration-none">About</a>
+                    <a href="contact.html" class="text-white text-decoration-none">Contact</a>
+                    <a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a>
+                </nav>
+                <!-- Footer Brand Wordmark -->
+                <a href="#" class="text-white text-decoration-none fw-bold fs-2 lh-1 me-md-4" style="letter-spacing: 0.04em;">
+                    PASADA
+                </a>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- Bootstrap JavaScript -->
@@ -47,7 +266,7 @@
     </script>
 
     <!-- Shared Components JavaScript -->
-    <script src="js/components.js"></script>
+    <script src="components.js"></script>
 
 </body>
 </html>
