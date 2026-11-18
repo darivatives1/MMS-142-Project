@@ -23,22 +23,267 @@
 
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
     <!-- HEADER -->
-    <div id="site-header"></div>
-
+    <header id="site-header" class="py-3" style="background-color: #0c1320;">
+        <div class="container">
+            <a href="#" class="d-inline-flex align-items-center gap-3 text-decoration-none text-white">
+               <!-- Brand Logo -->
+                <img src="logo.png" alt="PASADA Logo" class="rounded-circle bg-white flex-shrink-0 p-1" style="width: 48px; height: 48px; object-fit: contain;">
+                <!-- Brand Title -->
+                <span class="fw-bold fs-1 lh-1" style="letter-spacing: 0.04em;">PASADA</span>
+            </a>
+        </div>
+    </header>
 
     <!-- MAIN CONTENT -->
-    <main>
+    <main class="flex-grow-1">
 
-        # PUT YOUR HOME PAGE CONTENT HERE
+        <!-- HERO BANNER -->
+        <section class="position-relative w-100" style="background-color: #999999; min-height: 440px;">
+            <div class="container h-100 py-5 d-flex flex-column justify-content-between" style="min-height: 440px;">
+                <!-- Split Hero Image Placeholders -->
+                <div class="row g-4 align-items-center my-auto py-3">
+                    <div class="col-6 d-flex justify-content-center">
+                        <div style="width: 220px; height: 220px;">
+                            <svg viewBox="0 0 200 200" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="145" cy="55" r="20" fill="#cccccc"/>
+                                <polygon points="25,170 95,65 165,170" fill="#cccccc"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex justify-content-center">
+                        <div style="width: 220px; height: 220px;">
+                            <svg viewBox="0 0 200 200" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="145" cy="55" r="20" fill="#cccccc"/>
+                                <polygon points="25,170 95,65 165,170" fill="#cccccc"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Caption -->
+                <div class="text-white">
+                    <h1 class="fw-bold fs-2 mb-1">Don’t Be Late Tee</h1>
+                    <p class="font-monospace small mb-0">Now Available</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAGLINE BANNER -->
+        <section class="position-relative w-100 mt-2" style="background-color: #999999; min-height: 220px;">
+            <!-- Wireframe Diagonal Lines -->
+            <svg class="position-absolute top-0 start-0 w-100 h-100" preserveAspectRatio="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0" y1="0" x2="100" y2="100" stroke="#b3b3b3" stroke-width="0.3"/>
+                <line x1="100" y1="0" x2="0" y2="100" stroke="#b3b3b3" stroke-width="0.3"/>
+            </svg>
+            <div class="container position-relative d-flex align-items-center" style="min-height: 220px;">
+                <h2 class="fw-bold text-white fs-5 mb-0">Clean Routes, Zero Noise.</h2>
+            </div>
+        </section>
+
+        <!-- FEATURED PRODUCTS -->
+        <!-- FEATURED PRODUCTS -->
+<section class="container my-5 pt-2">
+    <h3 class="fw-bold fs-5 mb-4">Featured Products</h3>
+
+    <div class="row g-4">
+        <!-- Product 1: Don't Be Late Tee -->
+        <div class="col-12 col-md-4">
+            <a href="dont-be-late-tee.html" class="text-decoration-none text-dark d-block">
+                <div class="ratio ratio-1x1 mb-3" style="background-color: #999999;">
+                    <svg viewBox="0 0 200 200" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="200" height="200" fill="#999999"/>
+                        <circle cx="140" cy="60" r="18" fill="#cccccc"/>
+                        <polygon points="35,165 95,75 155,165" fill="#cccccc"/>
+                    </svg>
+                </div>
+                <h4 class="fw-bold font-monospace fs-6 mb-1">Don’t Be Late Tee</h4>
+                <p class="small text-muted mb-0">Made with 100% Cotton</p>
+                <p class="small text-muted mb-0">Breathable, Soft, and Versatile</p>
+            </a>
+        </div>
+
+        <!-- Product 2: Do Good Work Tee -->
+        <div class="col-12 col-md-4">
+            <a href="do-good-work-tee.html" class="text-decoration-none text-dark d-block">
+                <div class="ratio ratio-1x1 mb-3" style="background-color: #999999;">
+                    <svg viewBox="0 0 200 200" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="200" height="200" fill="#999999"/>
+                        <circle cx="140" cy="60" r="18" fill="#cccccc"/>
+                        <polygon points="35,165 95,75 155,165" fill="#cccccc"/>
+                    </svg>
+                </div>
+                <h4 class="fw-bold font-monospace fs-6 mb-1">Do Good Work Tee</h4>
+                <p class="small text-muted mb-0">Made with 100% Cotton</p>
+                <p class="small text-muted mb-0">Breathable, Soft, and Versatile</p>
+            </a>
+        </div>
+
+        <!-- Product 3: Everyday Comfort Tee -->
+        <div class="col-12 col-md-4">
+            <a href="everyday-comfort-tee.html" class="text-decoration-none text-dark d-block">
+                <div class="ratio ratio-1x1 mb-3" style="background-color: #999999;">
+                    <svg viewBox="0 0 200 200" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="200" height="200" fill="#999999"/>
+                        <circle cx="140" cy="60" r="18" fill="#cccccc"/>
+                        <polygon points="35,165 95,75 155,165" fill="#cccccc"/>
+                    </svg>
+                </div>
+                <h4 class="fw-bold font-monospace fs-6 mb-1">Everyday Comfort Tee</h4>
+                <p class="small text-muted mb-0">Made with 100% Cotton</p>
+                <p class="small text-muted mb-0">Designed for Everyday Wear</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+        <!-- CATEGORIES -->
+        <section class="container my-5">
+            <h3 class="fw-bold fs-5 mb-4">Categories</h3>
+
+            <div class="row g-4 text-center">
+                <!-- Category 1 -->
+                <div class="col-6 col-md-3">
+                    <a href="#" class="text-decoration-none text-dark d-block">
+                        <div class="ratio ratio-1x1 mb-2 mx-auto" style="background-color: #999999;">
+                            <svg viewBox="0 0 200 200" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="200" height="200" fill="#999999"/>
+                                <circle cx="140" cy="60" r="18" fill="#cccccc"/>
+                                <polygon points="35,165 95,75 155,165" fill="#cccccc"/>
+                            </svg>
+                        </div>
+                        <p class="font-monospace small mb-0">Outerwear</p>
+                    </a>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="col-6 col-md-3">
+                    <a href="#" class="text-decoration-none text-dark d-block">
+                        <div class="ratio ratio-1x1 mb-2 mx-auto" style="background-color: #999999;">
+                            <svg viewBox="0 0 200 200" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="200" height="200" fill="#999999"/>
+                                <circle cx="140" cy="60" r="18" fill="#cccccc"/>
+                                <polygon points="35,165 95,75 155,165" fill="#cccccc"/>
+                            </svg>
+                        </div>
+                        <p class="font-monospace small mb-0">T-Shirts</p>
+                    </a>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="col-6 col-md-3">
+                    <a href="#" class="text-decoration-none text-dark d-block">
+                        <div class="ratio ratio-1x1 mb-2 mx-auto" style="background-color: #999999;">
+                            <svg viewBox="0 0 200 200" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="200" height="200" fill="#999999"/>
+                                <circle cx="140" cy="60" r="18" fill="#cccccc"/>
+                                <polygon points="35,165 95,75 155,165" fill="#cccccc"/>
+                            </svg>
+                        </div>
+                        <p class="font-monospace small mb-0">Sweatshirts</p>
+                    </a>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="col-6 col-md-3">
+                    <a href="#" class="text-decoration-none text-dark d-block">
+                        <div class="ratio ratio-1x1 mb-2 mx-auto" style="background-color: #999999;">
+                            <svg viewBox="0 0 200 200" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="200" height="200" fill="#999999"/>
+                                <circle cx="140" cy="60" r="18" fill="#cccccc"/>
+                                <polygon points="35,165 95,75 155,165" fill="#cccccc"/>
+                            </svg>
+                        </div>
+                        <p class="font-monospace small mb-0">Pants</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROMOTIONAL BANNER & OUR ADVOCACY -->
+        <section class="container my-5">
+            <!-- Everyday Tee Banner -->
+            <div class="position-relative p-4 p-md-5 d-flex flex-column justify-content-end" style="background-color: #999999; min-height: 300px;">
+                <svg class="position-absolute top-0 start-0 w-100 h-100" preserveAspectRatio="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="0" x2="100" y2="100" stroke="#b3b3b3" stroke-width="0.3"/>
+                    <line x1="100" y1="0" x2="0" y2="100" stroke="#b3b3b3" stroke-width="0.3"/>
+                </svg>
+                <div class="position-relative text-white">
+                    <h3 class="fw-bold fs-4 mb-1">Everyday Tee</h3>
+                    <p class="small mb-0">Designed for everyday wear</p>
+                </div>
+            </div>
+
+            <!-- Our Advocacy Block -->
+            <div class="p-4 p-md-5 text-white" style="background-color: #0c1320;">
+                <div class="row g-4 align-items-center">
+                    <!-- Left Image -->
+                    <div class="col-12 col-md-3">
+                        <div class="ratio ratio-1x1 mx-auto" style="max-width: 200px; background-color: #999999;">
+                            <svg viewBox="0 0 200 200" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="200" height="200" fill="#999999"/>
+                                <circle cx="140" cy="60" r="18" fill="#cccccc"/>
+                                <polygon points="35,165 95,75 155,165" fill="#cccccc"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Center Text -->
+                    <div class="col-12 col-md-6 text-center px-md-4">
+                        <h3 class="fw-bold fs-4 mb-3">Our Advocacy</h3>
+                        <p class="small mb-3" style="line-height: 1.6;">
+                            In support of BiyaHEROES, we advocate for accessible and comfortable seating for commuters, especially those in underserved and rural communities who spend long hours waiting for public transportation.
+                        </p>
+                        <p class="small mb-0" style="line-height: 1.6;">
+                            Through fashion, we aim to raise awareness and support initiatives that make everyday commuting more comfortable and inclusive.
+                        </p>
+                    </div>
+
+                    <!-- Right Image -->
+                    <div class="col-12 col-md-3">
+                        <div class="ratio ratio-1x1 mx-auto" style="max-width: 200px; background-color: #999999;">
+                            <svg viewBox="0 0 200 200" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="200" height="200" fill="#999999"/>
+                                <circle cx="140" cy="60" r="18" fill="#cccccc"/>
+                                <polygon points="35,165 95,75 155,165" fill="#cccccc"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US -->
+        <section class="container my-5 py-3">
+            <div class="row g-4 align-items-center justify-content-between">
+                <div class="col-12 col-md-7">
+                    <h3 class="fw-bold fs-4 mb-3">About Us</h3>
+                    <p class="small text-muted mb-3" style="line-height: 1.6;">
+                        PASADA Clothing is a socially-driven clothing brand built on the belief that fashion can create meaningful change. In support of BiyaHEROES, we aim to improve the daily commuting experience by advocating for accessible and comfortable seating for commuters, especially in underserved and rural communities.
+                    </p>
+                    <p class="small text-muted mb-0" style="line-height: 1.6;">
+                        We bring together quality apparel and social advocacy to raise awareness of the challenges commuters face every day. Through every design and initiative, we hope to inspire people to support a more comfortable, inclusive, and commuter-friendly future.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="ratio ratio-4x3" style="background-color: #999999;">
+                        <svg viewBox="0 0 200 150" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="150" fill="#999999"/>
+                            <circle cx="145" cy="45" r="15" fill="#cccccc"/>
+                            <polygon points="40,125 95,55 150,125" fill="#cccccc"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
 
     <!-- FOOTER -->
-    <div id="site-footer"></div>
+     <div id="site-footer" data-include="footer.html"></div>
 
 
     <!-- Bootstrap JavaScript -->
@@ -47,7 +292,7 @@
     </script>
 
     <!-- Shared Components JavaScript -->
-    <script src="js/components.js"></script>
+    <script src="components.js"></script>
 
 </body>
 </html>
