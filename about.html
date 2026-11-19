@@ -6,7 +6,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>About Us | PASADA</title>
+    <title>Home | PASADA</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -26,8 +26,16 @@
 <body class="d-flex flex-column min-vh-100">
 
     <!-- HEADER -->
-    <div id="site-header"></div>
-
+    <header id="site-header" class="py-3" style="background-color: #0F172A;">
+        <div class="container">
+            <a href="#" class="d-inline-flex align-items-center gap-3 text-decoration-none text-white">
+               <!-- Brand Logo -->
+                <img src="logo.png" alt="PASADA Logo" class="rounded-circle bg-white flex-shrink-0 p-1" style="width: 48px; height: 48px; object-fit: contain;">
+                <!-- Brand Title -->
+                <span class="fw-bold fs-1 lh-1" style="letter-spacing: 0.04em;">PASADA</span>
+            </a>
+        </div>
+    </header>
 
     <!-- MAIN CONTENT -->
     <main class="flex-grow-1 d-flex align-items-center py-5">
@@ -69,9 +77,8 @@
 
     </main>
 
-
     <!-- FOOTER -->
-    <div id="site-footer"></div>
+    <div id="site-footer" data-include="footer.html"></div>
 
 
     <!-- Bootstrap JavaScript -->
@@ -81,6 +88,15 @@
 
     <!-- Shared Components JavaScript -->
     <script src="js/components.js"></script>
+
+    <!-- Load footer.html -->
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('site-footer').innerHTML = data;
+            });
+    </script>
 
 </body>
 </html>
