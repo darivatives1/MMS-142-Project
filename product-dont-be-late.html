@@ -6,7 +6,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Don't Be Late Tee | PASADA</title>
+    <title>Home | PASADA</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -20,6 +20,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="order.js" defer></script>
 
 </head>
     
@@ -49,48 +51,46 @@
 
                     <!-- Product Image -->
                     <div class="col-md-5">
-    <img src="images/tee-dont-be-late-front.png"
-         class="img-fluid"
-         alt="White t-shirt printed in navy with a dashed clock and the words Don't be late.">
-    </div>
+                        <div class="ratio ratio-1x1 bg-secondary bg-opacity-75">
+                            <svg viewBox="0 0 200 200" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="200" height="200" fill="#999999"/>
+                                <circle cx="140" cy="60" r="18" fill="#cccccc"/>
+                                <polygon points="35,165 95,75 155,165" fill="#cccccc"/>
+                            </svg>
+                        </div>
+                    </div>
 
                     <!-- Product Controls -->
-                    <div class="col-md-7">
+                    <form class="col-md-7" id="order-form">
                         <h1 class="fw-bold mb-1">Don’t Be Late Tee</h1>
                         <p class="fs-4 font-monospace mb-3">P499.00</p>
 
                         <!-- Size Selector -->
-                        <div class="d-flex gap-2 mb-3" role="group" aria-label="Size selection">
-                            <input type="radio" class="btn-check" name="size" id="size-s" autocomplete="off">
-                            <label class="btn rounded-0 px-4 font-monospace" style="background-color: #cccccc;" for="size-s">S</label>
+                        <div class="d-flex gap-2 mb-3" id="size-selection" role="group" aria-label="Size selection">
 
-                            <input type="radio" class="btn-check" name="size" id="size-m" autocomplete="off">
-                            <label class="btn rounded-0 px-4 font-monospace" style="background-color: #cccccc;" for="size-m">M</label>
+                            <input type="radio" class="btn-check" name="size" id="Small" autocomplete="off">
+                            <label class="btn rounded-0 px-4 font-monospace" style="background-color: #cccccc;" for="Small">S</label>
 
-                            <input type="radio" class="btn-check" name="size" id="size-l" autocomplete="off">
-                            <label class="btn rounded-0 px-4 font-monospace" style="background-color: #cccccc;" for="size-l">L</label>
-                        </div>
+                            <input type="radio" class="btn-check" name="size" id="Medium" autocomplete="off">
+                            <label class="btn rounded-0 px-4 font-monospace" style="background-color: #cccccc;" for="Medium">M</label>
 
-                        <!-- Quantity Selector -->
-                        <div class="d-inline-flex align-items-center mb-3 font-monospace" style="background-color: #cccccc;">
-                            <button type="button" class="btn btn-sm border-0 rounded-0 px-3 py-1">-</button>
-                            <span class="px-2">0</span>
-                            <button type="button" class="btn btn-sm border-0 rounded-0 px-3 py-1">+</button>
+                            <input type="radio" class="btn-check" name="size" id="Large" autocomplete="off">
+                            <label class="btn rounded-0 px-4 font-monospace" style="background-color: #cccccc;" for="Large">L</label>
+
+                            <p id="shirt-variant" hidden>Don't Be Late</p>
+
                         </div>
 
                         <!-- Action Buttons -->
                         <div class="d-flex flex-wrap gap-2 mb-2">
-                            <button type="button" class="btn rounded-0 border border-dark text-white font-monospace px-3 py-1" style="background-color: #546378;">
-                                Add to Cart
-                            </button>
-                            <button type="button" class="btn rounded-0 border border-dark text-dark font-monospace px-3 py-1" style="background-color: #dfb228;">
+                            <button type="submit" class="btn rounded-0 border border-dark text-dark font-monospace px-3 py-1" style="background-color: #dfb228;">
                                 Order Now
                             </button>
                         </div>
 
                         <!-- Sold Count -->
                         <p class="small mb-0">6767 sold</p>
-                    </div>
+                    </form>
                 </div>
 
                 <!-- Product Details Section -->
@@ -190,10 +190,13 @@
                     <h6 class="fw-bold font-monospace mb-4">Check Out our other products here!</h6>
 
                     <!-- Recommended Product 1 -->
-                    <a href="product-do-good-work.html" class="text-decoration-none text-dark d-block mb-4">
+                    <a href="#" class="text-decoration-none text-dark d-block mb-4">
                         <div class="mx-auto mb-2" style="width: 135px; height: 135px;">
-                            <img src="images/tee-do-good-work-front.png" class="img-fluid mx-auto d-block mb-2" style="width: 135px;"
-      alt="Do Good Work Tee: gold t-shirt with a navy map pin holding the PASADA logo, above the words Do good work."> 
+                            <svg viewBox="0 0 200 200" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="200" height="200" fill="#999999"/>
+                                <circle cx="140" cy="60" r="18" fill="#cccccc"/>
+                                <polygon points="35,165 95,75 155,165" fill="#cccccc"/>
+                            </svg>
                         </div>
                         <p class="fw-bold small mb-0">Do Good Work</p>
                         <p class="small mb-1">P 499.00</p>
@@ -208,10 +211,13 @@
                     </a>
 
                     <!-- Recommended Product 2 -->
-                    <a href="product-everyday-comfort.html" class="text-decoration-none text-dark d-block">
+                    <a href="#" class="text-decoration-none text-dark d-block">
                         <div class="mx-auto mb-2" style="width: 135px; height: 135px;">
-                            <img src="images/tee-everyday-comfort-front.png" class="img-fluid mx-auto d-block mb-2" style="width: 135px;"
-       alt="Everyday Comfort Tee: navy t-shirt with a white and gold waiting shed and bench.">
+                            <svg viewBox="0 0 200 200" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="200" height="200" fill="#999999"/>
+                                <circle cx="140" cy="60" r="18" fill="#cccccc"/>
+                                <polygon points="35,165 95,75 155,165" fill="#cccccc"/>
+                            </svg>
                         </div>
                         <p class="fw-bold small mb-0">Everyday Comfort</p>
                         <p class="small mb-1">P 499.00</p>
