@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
 
     <title>Contact Us | PASADA</title>
 
@@ -24,52 +25,65 @@
         <div class="container-fluid pasada-theme py-3 px-12">   
             <a 
                 href="index.html" 
-                class="d-inline-flex align-items-center pasada-nav">
+                class="d-inline-flex align-items-right pasada-nav">
                     <img src="logo.png" alt="PASADA Logo" class="rounded-circle mx-3" width="60" height="60">
                     <span class="fs-3xl fw-bold px-3">PASADA</span> 
             </a>   
         </div>  
     </nav>
 
-    <main class="py-12">
+<main class="py-12">
 
-        <div class="container px-12">
-            <h1 class="pasada-body text-center py-7 fw-bold">Contact</h1>
-        </div>
+<style>
+    .contact-row {
+        display: grid;
+        grid-template-columns: 5fr 6fr;
+        gap: 3rem;
+        align-items: center;
+    }
+    .contact-image { grid-column: 1; grid-row: 1; }  
+    .contact-form  { grid-column: 2; grid-row: 1; }  
 
-        <div class="container">
-            <div class="row">
-              <div class="md:col-6 pasada-body">
+    @media (max-width: 1400px) {
+        .contact-row { grid-template-columns: 1fr; }
+        .contact-image, .contact-form { grid-column: 1; grid-row: auto; }
+    }
+</style>
+
+        <div class="row align-items-center justify-content-between g-5 contact-row">
+
+            <!-- LEFT: picture -->
+            <div class="col-12 col-md-5">
+                <img src="logo-contact.png" class="img-fluid mx-auto d-block" alt="PASADA Logo">
+            </div>
+
+            <div class="col-12 col-md-6 pasada-body">
+                <h1 class="pasada-body fw-bold py-3 contact-title" style="font-size: 3.5rem;">Contact Us</h1>
+
                 <form id="contact-form">
-                    
                     <div class="py-3">
                         <label for="customer-name" class="fs-xl fw-semibold pasada-body py-3">Name</label>
                         <input type="text" class="form-control p-2" id="customer-name">
                     </div>
 
                     <div class="py-3">
-                      <label for="customer-email" class="fs-xl fw-semibold pasada-body py-3">Email address</label>
-                      <input type="email" class="form-control" id="customer-email">
+                        <label for="customer-email" class="fs-xl fw-semibold pasada-body py-3">Email address</label>
+                        <input type="email" class="form-control p-2" id="customer-email">
                     </div>
 
-                    <div class="py-3 mt-7">
+                    <div class="py-3 mt-3">s
                         <label for="customer-inquiry" class="fs-xl pasada-body fw-semibold py-3">Message</label>
                         <textarea class="form-control" id="customer-inquiry" rows="6"></textarea>
-
                     </div>
 
-
-                    <button type="submit" class="btn-solid pasada-nav fs-xl px-7 py-3 mt-7">Submit</button>
-
-                  </form>
-              </div>
-              <div class="md:col-6 pasada-body">
-                <img src="logo-contact.png" class="rounded mx-auto d-block" alt="PASADA Logo">
-              </div>
+                    <button type="submit" class="btn-solid pasada-nav fs-xl px-7 py-3 mt-3">Submit</button>
+                </form>
             </div>
-        </div>
 
-    </main>
+        </div>
+    </div>
+
+</main>
 
     <footer>
         <nav class="navbar sm:navbar-expand pasada-nav">
