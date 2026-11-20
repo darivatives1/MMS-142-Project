@@ -1,13 +1,3 @@
-// PASADA Shared Components
-// Injects the shared header + footer on every page (works when opened from a
-// local folder too, since nothing is fetched over the network).
-//
-// Usage in a page:
-//   <header id="site-header" data-variant="circle"></header>   (Privacy, Contact, About)
-//   <header id="site-header" data-variant="mark"></header>     (Product pages)
-//   <header id="site-header" data-variant="home"></header>     (Home – floats over hero)
-//   <footer id="site-footer"></footer>
-
 const PRODUCTS = [
     { name: "Don’t Be Late Tee",     keywords: ["dont be late", "don't be late", "late"],        url: "product-dont-be-late.html" },
     { name: "Do Good Work",          keywords: ["do good work", "good work", "work"],            url: "product-do-good-work.html" },
@@ -25,13 +15,13 @@ const HEADERS = {
     mark: `
         <div class="page-container">
             <a href="index.html" class="brand">
-                <img src="images/logo-white.png" alt="PASADA logo" class="brand-mark">
+                <img src="logo-white.png" alt="PASADA logo" class="brand-mark">
                 <span class="brand-word">PASADA</span>
             </a>
         </div>`,
     home: `
         <a href="index.html" class="brand">
-            <img src="images/logo-white.png" alt="PASADA logo" class="brand-mark">
+            <img src="logo-white.png" alt="PASADA logo" class="brand-mark">
             <span class="brand-word">PASADA</span>
         </a>
         <form class="search-pill" id="search-form" role="search">
