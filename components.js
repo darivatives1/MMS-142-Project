@@ -6,28 +6,48 @@ const PRODUCTS = [
 
 const HEADERS = {
     circle: `
-        <div class="page-container">
-            <a href="index.html" class="brand">
-                <img src="logo.png" alt="PASADA logo" class="brand-circle">
-                <span class="brand-word">PASADA</span>
-            </a>
+        <div class="header-inner">
+            <div class="header-left">
+                <a href="index.html" class="brand">
+                    <img src="logo.png" alt="PASADA logo" class="brand-circle">
+                    <span class="brand-word">PASADA</span>
+                </a>
+                <nav class="header-nav" aria-label="Main">
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
         </div>`,
     mark: `
-        <div class="page-container">
-            <a href="index.html" class="brand">
-                <img src="logo-white.png" alt="PASADA logo" class="brand-mark">
-                <span class="brand-word">PASADA</span>
-            </a>
+        <div class="header-inner">
+            <div class="header-left">
+                <a href="index.html" class="brand">
+                    <img src="logo-white.png" alt="PASADA logo" class="brand-mark">
+                    <span class="brand-word">PASADA</span>
+                </a>
+                <nav class="header-nav" aria-label="Main">
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
         </div>`,
     home: `
-        <a href="index.html" class="brand">
-            <img src="logo-white.png" alt="PASADA logo" class="brand-mark">
-            <span class="brand-word">PASADA</span>
-        </a>
-        <form class="search-pill" id="search-form" role="search">
-            <i class="bi bi-search" aria-hidden="true"></i>
-            <input type="search" id="search-input" placeholder="Search PASADA..." aria-label="Search PASADA">
-        </form>`
+        <div class="header-inner">
+            <div class="header-left">
+                <a href="index.html" class="brand">
+                    <img src="logo-white.png" alt="PASADA logo" class="brand-mark">
+                    <span class="brand-word">PASADA</span>
+                </a>
+                <nav class="header-nav" aria-label="Main">
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+            <form class="search-pill" id="search-form" role="search">
+                <i class="bi bi-search" aria-hidden="true"></i>
+                <input type="search" id="search-input" placeholder="Search PASADA..." aria-label="Search PASADA">
+            </form>
+        </div>`
 };
 
 const FOOTER = `
