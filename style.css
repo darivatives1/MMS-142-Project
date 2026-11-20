@@ -31,138 +31,147 @@ body {
     padding-inline: 1.5rem;
 }
 
-/* ---------- Header (all pages except Home) ---------- */
-.site-header {
-    background: var(--primary);
-    color: var(--neutral);
-}
-.site-header .brand {
-    display: inline-flex;
-    align-items: center;
-    gap: 1.1rem;
-    padding-block: 1.05rem;
-    color: inherit;
-    text-decoration: none;
-}
-.brand-circle {
-    width: 58px; height: 58px;
-    border-radius: 50%;
-    background: #fff;
-    padding: 5px;
-    object-fit: contain;
-    flex-shrink: 0;
-}
-.brand-mark { height: 52px; width: auto; flex-shrink: 0; }
-.brand-word {
-    font-weight: 700;
-    font-size: clamp(2rem, 4.2vw, 3.1rem);
-    line-height: 1;
-    letter-spacing: .02em;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
-/* ---------- Header (for Homepage) ---------- */
+/* ---------- Header (Full-Width) ---------- */
 #site-header {
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
+.site-header,
 .home-header {
     position: relative;
     top: 0;
     left: 0;
     z-index: 1030;
     width: 100%;
-    margin-top: 0;
+    margin: 0;
     background: var(--primary);
-    color: #fff;
+    color: var(--neutral);
 }
+
+.site-header .header-inner,
 .home-header .header-inner {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding-block: 1.9rem;
+    gap: 2rem;
+    padding: 1.15rem clamp(1.5rem, 4.5vw, 4rem);
 }
+
+.site-header .header-left,
 .home-header .header-left {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1.5rem 3rem;
+    gap: 1.5rem clamp(2.5rem, 6vw, 6.5rem);
 }
+
+.site-header .brand,
 .home-header .brand {
     display: inline-flex;
     align-items: center;
-    gap: .75rem;
-    color: #fff;
+    gap: .85rem;
+    color: inherit;
     text-decoration: none;
 }
-.home-header .brand-mark {
-    height: 42px;
-    width: auto;
+
+.brand-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 5px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
-.home-header .brand-word {
+
+.brand-mark {
+    height: 36px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.brand-word {
     font-weight: 700;
-    font-size: 2.6rem;
+    font-size: clamp(1.75rem, 2.5vw, 2.2rem);
     line-height: 1;
     letter-spacing: .02em;
 }
-.home-header .header-nav {
+
+.header-nav {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 1.5rem 3rem;
+    gap: 1rem clamp(2rem, 5vw, 5.5rem);
     font-family: var(--font-mono);
     font-size: .95rem;
 }
-.home-header .header-nav a {
+
+.header-nav a {
     color: #fff;
     text-decoration: none;
 }
-.home-header .header-nav a:hover {
-    text-decoration: underline;
+
+.header-nav a:hover {
+    color: var(--secondary);
 }
+
 .search-pill {
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: .6rem;
     background: #fff;
     border-radius: 999px;
-    padding: .35rem .9rem;
-    flex: 0 1 220px;
-    min-width: 180px;
-    max-width: 240px;
+    padding: .42rem 1.1rem;
+    flex: 0 1 360px;
+    min-width: 200px;
+    max-width: 380px;
 }
+
 .search-pill i {
     color: var(--primary);
     font-size: .95rem;
+    line-height: 1;
 }
+
 .search-pill input {
     border: 0;
     outline: 0;
     background: transparent;
     width: 100%;
-    font: 400 .72rem var(--font-sans);
+    font: 400 .82rem var(--font-sans);
     color: var(--primary);
 }
-@media (max-width: 767.98px) {
-    .home-header .header-inner,
-    .home-header .header-left {
+
+.search-pill input::placeholder {
+    color: var(--secondary2);
+}
+
+@media (max-width: 900px) {
+    .site-header .header-inner,
+    .home-header .header-inner {
         flex-direction: column;
+        align-items: center;
         text-align: center;
+        gap: 1rem;
     }
-    .home-header .header-nav {
+
+    .site-header .header-left,
+    .home-header .header-left {
         justify-content: center;
-        gap: 1rem 1.75rem;
+        gap: 1rem 2rem;
     }
+
+    .header-nav {
+        justify-content: center;
+        gap: 1rem 2rem;
+    }
+
     .search-pill {
         width: 100%;
-        max-width: 320px;
+        max-width: 360px;
         flex-basis: auto;
     }
 }
