@@ -9,7 +9,7 @@ const HEADERS = {
         <div class="header-inner">
             <div class="header-left">
                 <a href="index.html" class="brand">
-                    <img src="logo.png" alt="PASADA logo" class="brand-circle">
+                    <img src="logo-white.png" alt="PASADA logo" class="brand-mark">
                     <span class="brand-word">PASADA</span>
                 </a>
             </div>
