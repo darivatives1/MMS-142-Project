@@ -60,52 +60,73 @@ body {
     letter-spacing: .02em;
 }
 
-/* ---------- Header (Stretched End-to-End) ---------- */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- Header (for Homepage) ---------- */
+#site-header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .home-header {
     position: relative;
-    z-index: 3;
+    top: 0;
+    left: 0;
+    z-index: 1030;
     width: 100%;
+    margin-top: 0;
     background: var(--primary);
     color: #fff;
+}
+.home-header .header-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1.5rem;
-    padding: 1rem 3rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-block: 1.9rem;
 }
-
 .home-header .header-left {
     display: flex;
     align-items: center;
-    gap: 2.5rem;
+    flex-wrap: wrap;
+    gap: 1.5rem 3rem;
 }
-
 .home-header .brand {
     display: inline-flex;
     align-items: center;
     gap: .75rem;
-    color: inherit;
+    color: #fff;
     text-decoration: none;
 }
-.home-header .brand-mark { height: 46px; }
-.home-header .brand-word { font-size: 2.1rem; font-weight: 700; line-height: 1; }
-
+.home-header .brand-mark {
+    height: 42px;
+    width: auto;
+}
+.home-header .brand-word {
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: 1;
+    letter-spacing: .02em;
+}
 .home-header .header-nav {
     display: flex;
-    align-items: center;
-    gap: 1.75rem;
+    flex-wrap: wrap;
+    gap: 1.5rem 3rem;
+    font-family: var(--font-mono);
+    font-size: .95rem;
 }
 .home-header .header-nav a {
     color: #fff;
     text-decoration: none;
-    font-family: var(--font-mono, monospace);
-    font-size: .95rem;
-    transition: opacity .2s ease;
 }
 .home-header .header-nav a:hover {
-    opacity: .75;
+    text-decoration: underline;
 }
-
 .search-pill {
     display: flex;
     align-items: center;
@@ -113,12 +134,14 @@ body {
     background: #fff;
     border-radius: 999px;
     padding: .35rem .9rem;
-    margin-left: auto;
-    flex: 1 1 200px;
-    min-width: 0;
+    flex: 0 1 220px;
+    min-width: 180px;
     max-width: 240px;
 }
-.search-pill i { color: var(--primary); font-size: .95rem; }
+.search-pill i {
+    color: var(--primary);
+    font-size: .95rem;
+}
 .search-pill input {
     border: 0;
     outline: 0;
@@ -127,22 +150,23 @@ body {
     font: 400 .72rem var(--font-sans);
     color: var(--primary);
 }
-
 @media (max-width: 767.98px) {
-    .home-header {
-        padding: .85rem 1.25rem;
-        flex-wrap: wrap;
-    }
+    .home-header .header-inner,
     .home-header .header-left {
-        gap: 1.25rem;
+        flex-direction: column;
+        text-align: center;
     }
-    .home-header .brand-word { font-size: 1.6rem; }
+    .home-header .header-nav {
+        justify-content: center;
+        gap: 1rem 1.75rem;
+    }
     .search-pill {
-        max-width: none;
-        flex-basis: 100%;
-        margin-left: 0;
+        width: 100%;
+        max-width: 320px;
+        flex-basis: auto;
     }
 }
+
 /* ---------- Footer ---------- */
 .site-footer {
     background: var(--primary);
