@@ -12,10 +12,6 @@ const HEADERS = {
                     <img src="logo.png" alt="PASADA logo" class="brand-circle">
                     <span class="brand-word">PASADA</span>
                 </a>
-                <nav class="header-nav" aria-label="Main">
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
             </div>
         </div>`,
     mark: `
